@@ -316,7 +316,8 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #111; }
+  border-bottom: 1px solid #111;
+  position: relative !important; }
   .blender-section .left-content {
     background: #111;
     color: white;
