@@ -7,18 +7,67 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: none !important;
+    background-color: transparent;
+}
+
+ ::-webkit-scrollbar {
+    width: 3px !important;
+    background-color: transparent;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.on-scrollbar {
+    scrollbar-width: thin;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+}
+
+.on-scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.on-scrollbar::-webkit-scrollbar {
+    width: 6px !important;
+    background-color: transparent;
+}
+
+.on-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #acacac;
+    border-radius: 20px !important;
 }
 
 body {
     animation: fadein ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    overflow: overlay !important;
+    overflow-x: hidden !important;
 }
 
 .scroller {
     height: 100vh;
-    overflow-y: scroll;
+    overflow-y: scroll !important;
     scroll-snap-type: y mandatory;
+    overflow: overlay !important;
+    overflow-x: hidden !important;
+    transition: all .5s;
 }
 
 //ANIMATION

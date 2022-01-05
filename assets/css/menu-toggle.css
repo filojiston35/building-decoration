@@ -28,6 +28,10 @@
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
 }
 
+.menu-toggle span:last-child {
+    margin-bottom: 0px !important;
+}
+
 .menu-toggle span:first-child {
     transform-origin: 0% 0%;
 }

@@ -72,7 +72,7 @@
 }
 
 @media (max-width: 991px) {
-    .blender-section {
+    .information-section {
         .left-content {
             padding: 20px;
             .column-1 {
@@ -102,14 +102,14 @@
 @media (max-width: 768px) {}
 
 @media (max-width: 576px) {
-    .blender-section {
+    .information-section {
         .left-content {
             padding: 5px;
             .column-1 {
                 writing-mode: tb-rl;
             }
             .column-2 {
-                font-size: 40px;
+                font-size: 24px;
                 writing-mode: tb-rl;
                 margin: 14px 0px;
             }
