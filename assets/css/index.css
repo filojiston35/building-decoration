@@ -541,7 +541,7 @@ body {
     margin-left: 5px;
     transition: all 0.5s; }
   .wp-button i {
-    transform: translateX(30px);
+    transform: translateX(32px);
     transition: 0.5s; }
 
 @keyframes pulse {
@@ -554,6 +554,8 @@ body {
     width: 35px;
     height: 35px;
     font-size: 17px; }
+    .wp-button i {
+      transform: translateX(29px); }
     .wp-button::after {
       font-size: 12px; }
     .wp-button:hover {
@@ -668,12 +670,17 @@ body {
     width: 40px !important;
     padding: 0px 8px !important; }
   .works-section .carousel-indicators {
-    transform: translateY(-75px); }
+    transform: translateY(-120px);
+    height: 60px; }
     .works-section .carousel-indicators li {
       width: 45px !important;
       height: 45px !important; }
       .works-section .carousel-indicators li img {
         width: 45px !important;
         height: 45px !important; } }
+.footer {
+  height: 150px;
+  width: 100%;
+  background-color: #111; }
 
 /*# sourceMappingURL=index.css.map */

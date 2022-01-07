@@ -34,7 +34,7 @@
         transition: all 0.5s;
     }
     i {
-        transform: translateX(30px);
+        transform: translateX(32px);
         transition: 0.5s;
     }
 }
@@ -53,6 +53,9 @@
         width: 35px;
         height: 35px;
         font-size: 17px;
+        i {
+            transform: translateX(29px);
+        }
         &::after {
             font-size: 12px;
         }
