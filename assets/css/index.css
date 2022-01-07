@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   position: absolute;
   top: 0;
@@ -510,5 +511,54 @@ body {
     .information-section .right-content .column-3 {
       font-size: 10px;
       padding: 0px; } }
+.wp-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  transition: all 0.5s;
+  animation: pulse 1s infinite;
+  z-index: 100; }
+  .wp-button:hover {
+    width: 200px;
+    text-decoration: none;
+    color: white; }
+    .wp-button:hover::after {
+      opacity: 1; }
+    .wp-button:hover i {
+      transform: translateX(0px); }
+  .wp-button::after {
+    opacity: 0;
+    content: "iletişime geç";
+    font-size: 14px;
+    margin-left: 5px;
+    transition: all 0.5s; }
+  .wp-button i {
+    transform: translateX(30px);
+    transition: 0.5s; }
+
+@keyframes pulse {
+  0% {
+    box-shadow: rgba(37, 211, 102, 0.2) 0px 0px 0px 0px; }
+  100% {
+    box-shadow: rgba(37, 211, 102, 0.2) 0px 7px 29px 0px; } }
+@media (max-width: 576px) {
+  .wp-button {
+    width: 35px;
+    height: 35px;
+    font-size: 17px; }
+    .wp-button::after {
+      font-size: 12px; }
+    .wp-button:hover {
+      width: 120px; } }
 
 /*# sourceMappingURL=index.css.map */
